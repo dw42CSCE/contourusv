@@ -55,4 +55,4 @@ jobs:
         git config --global user.name "Dallas Wade"  # Replace with your name
         git add docs/ -f
         git commit -m "Add generated Sphinx documentation"
-        git push origin main
+        git push origin FixMain
