@@ -287,7 +287,7 @@
     <span class="n">audio_files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">files_path</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span>
         <span class="s2">&quot;*.wav&quot;</span><span class="p">))</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">files_path</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s2">&quot;*.WAV&quot;</span><span class="p">)))</span>
 
-    <span class="c1"># Measure the time and energy taken to execute the pipeline</span>
+    <span class="c1"># # Measure the time and energy taken to execute the pipeline</span>
     <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="n">tracker</span> <span class="o">=</span> <span class="n">EmissionsTracker</span><span class="p">(</span><span class="n">output_dir</span><span class="o">=</span><span class="n">output_path</span><span class="p">)</span>
     <span class="n">tracker</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
@@ -297,10 +297,10 @@
         <span class="n">run_detection</span><span class="p">(</span><span class="n">root_path</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">,</span> <span class="n">experiment</span><span class="p">,</span> <span class="n">trial</span><span class="p">,</span> <span class="o">**</span><span class="n">ac_kwargs</span><span class="p">)</span>
     
     <span class="c1"># Generate ground truth annotations</span>
-    <span class="n">generate_annotations</span><span class="p">(</span><span class="n">experiment</span><span class="p">,</span> <span class="n">trial</span><span class="p">,</span> <span class="n">root_path</span><span class="p">,</span> <span class="n">file_ext</span><span class="p">)</span>
+    <span class="c1"># generate_annotations(experiment, trial, root_path, file_ext)</span>
 
     <span class="c1"># Run evaluation</span>
-    <span class="n">run_evaluation</span><span class="p">(</span><span class="n">experiment</span><span class="p">,</span> <span class="n">trial</span><span class="p">,</span> <span class="n">root_path</span><span class="p">)</span>
+    <span class="c1"># run_evaluation(experiment, trial, root_path)</span>
 
     <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="n">total_time</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
