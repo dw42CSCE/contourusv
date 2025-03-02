@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>src &mdash; ContourUSV 1.0.0 documentation</title>
+  <title>contourusv &mdash; ContourUSV 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -42,7 +42,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="src.html">src package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contourusv.html">contourusv package</a></li>
 </ul>
 
         </div>
@@ -59,7 +59,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">src</li>
+      <li class="breadcrumb-item active">contourusv</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -69,42 +69,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="src">
-<h1>src<a class="headerlink" href="#src" title="Link to this heading"></a></h1>
+  <section id="contourusv">
+<h1>contourusv<a class="headerlink" href="#contourusv" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="src.html">src package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.detection">src.detection module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.detection.detect_contours"><code class="docutils literal notranslate"><span class="pre">detect_contours()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="contourusv.html">contourusv package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.datasets">contourusv.datasets module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.datasets.get_usvseg"><code class="docutils literal notranslate"><span class="pre">get_usvseg()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.evaluation">src.evaluation module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.evaluation.evaluate_predictions"><code class="docutils literal notranslate"><span class="pre">evaluate_predictions()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.evaluation.get_sample_labels"><code class="docutils literal notranslate"><span class="pre">get_sample_labels()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.evaluation.has_columns"><code class="docutils literal notranslate"><span class="pre">has_columns()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.evaluation.load_annotation"><code class="docutils literal notranslate"><span class="pre">load_annotation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.evaluation.run_evaluation"><code class="docutils literal notranslate"><span class="pre">run_evaluation()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.detection">contourusv.detection module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.detection.detect_contours"><code class="docutils literal notranslate"><span class="pre">detect_contours()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.generate_annotation">src.generate_annotation module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.generate_annotation.generate_annotations"><code class="docutils literal notranslate"><span class="pre">generate_annotations()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.generate_annotation.load_csv_usv"><code class="docutils literal notranslate"><span class="pre">load_csv_usv()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.generate_annotation.load_excel_usv"><code class="docutils literal notranslate"><span class="pre">load_excel_usv()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.generate_annotation.load_html_usv"><code class="docutils literal notranslate"><span class="pre">load_html_usv()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.generate_annotation.save_annotations"><code class="docutils literal notranslate"><span class="pre">save_annotations()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.evaluation">contourusv.evaluation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.evaluation.evaluate_predictions"><code class="docutils literal notranslate"><span class="pre">evaluate_predictions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.evaluation.get_sample_labels"><code class="docutils literal notranslate"><span class="pre">get_sample_labels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.evaluation.has_columns"><code class="docutils literal notranslate"><span class="pre">has_columns()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.evaluation.load_annotation"><code class="docutils literal notranslate"><span class="pre">load_annotation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.evaluation.run_evaluation"><code class="docutils literal notranslate"><span class="pre">run_evaluation()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.main">src.main module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.main.low_pass_filter"><code class="docutils literal notranslate"><span class="pre">low_pass_filter()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.main.run_detection"><code class="docutils literal notranslate"><span class="pre">run_detection()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.generate_annotation">contourusv.generate_annotation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.generate_annotation.generate_annotations"><code class="docutils literal notranslate"><span class="pre">generate_annotations()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.generate_annotation.load_csv_usv"><code class="docutils literal notranslate"><span class="pre">load_csv_usv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.generate_annotation.load_excel_usv"><code class="docutils literal notranslate"><span class="pre">load_excel_usv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.generate_annotation.load_html_usv"><code class="docutils literal notranslate"><span class="pre">load_html_usv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.generate_annotation.save_annotations"><code class="docutils literal notranslate"><span class="pre">save_annotations()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.preprocessing">src.preprocessing module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="src.html#src.preprocessing.clean_spec"><code class="docutils literal notranslate"><span class="pre">clean_spec()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.main">contourusv.main module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.main.low_pass_filter"><code class="docutils literal notranslate"><span class="pre">low_pass_filter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.main.run_detection"><code class="docutils literal notranslate"><span class="pre">run_detection()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv.preprocessing">contourusv.preprocessing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contourusv.html#contourusv.preprocessing.clean_spec"><code class="docutils literal notranslate"><span class="pre">clean_spec()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contourusv.html#module-contourusv">Module contents</a></li>
 </ul>
 </li>
 </ul>
